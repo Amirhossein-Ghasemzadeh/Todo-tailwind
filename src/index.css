@@ -1,0 +1,42 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* item checkbox Style */
+.check-button {
+  margin-left: 32px;
+  visibility: hidden;
+  color: rgb(161, 19, 19) !important;
+}
+ input[type='checkbox']:after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  color: #fff;
+  visibility: visible;
+  border: solid 1px #828282;
+  border-radius: 50%;
+  cursor: pointer;
+}
+input[type='checkbox']:checked:after {
+  content: '\2714';
+  background-color: #3ef520;
+  text-align: center;
+  border: none;
+  outline: none;
+}
