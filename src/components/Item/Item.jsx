@@ -31,7 +31,7 @@ const Item = ({
         <div className='flex items-start mr-16'>
           {!status && (
             <button
-              className='border-none outline-none bg-transparent cursor-pointer mr-6 hover:bg-blue-100'
+              className='border-none outline-none bg-transparent cursor-pointer mr-8 hover:bg-blue-100'
               onClick={() => editItem(id)}
             >
               <img src={Pencil} alt='edit' />
