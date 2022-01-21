@@ -12,11 +12,11 @@ const List = ({ list, removeItem, editItem, changeItemStatus }) => {
   let selectedData = list.filter((item) => item.status === status);
 
   return (
-    <div className='flex flex-col w-[1125px] pt-[44px] pr-[49px] pb-[40px] pl-[50px] mt-[68px] mr-[158px] mb-[243px] ml-[158px] rounded-bl-[25px] rounded-br-[25px] bg-white'>
-      <div className='flex items-center justify-between  w-full h-[48px] mb-[22px] ml-[2px] pb-[2px] font-normal font-[Roboto]'>
-        <div className='flex items-center w-[50px] h-[40px] text-[44px] text-[#000]'>
+    <div className='flex flex-col w-[1125px] pt-11 pr-[49px] pb-10 pl-[50px] mt-[68px] mr-[158px] mb-[243px] ml-[158px] rounded-bl-[25px] rounded-br-[25px] bg-white'>
+      <div className='flex items-center justify-between  w-full h-12 mb-[22px] ml-0.5 pb-0.5 font-normal font-[Roboto]'>
+        <div className='flex items-center w-[50px] h-10 text-[44px] text-[#000]'>
           {day}
-          <div className='flex flex-col items-center justify-center text-[16px] ml-[5px]'>
+          <div className='flex flex-col items-center justify-center text-base ml-[5px]'>
             <span className='text-[#000] font-semibold'>{shortMonth}</span>
             <span className='text-[#545454]'>{year}</span>
           </div>
@@ -26,8 +26,8 @@ const List = ({ list, removeItem, editItem, changeItemStatus }) => {
             onClick={() => setStatus(false)}
             className={
               !status
-                ? 'text-[#55dddd] font-black leading-[19px] font-[Roboto] text-[16px] cursor-pointer border-none outline-none bg-transparent'
-                : 'text-[16px] font-semibold font-[Roboto] leading-[19px] cursor-pointer border-none outline-none bg-transparent'
+                ? 'text-[#55dddd] font-black leading-[19px] font-[Roboto] text-base cursor-pointer border-none outline-none bg-transparent'
+                : 'text-base font-semibold font-[Roboto] leading-[19px] cursor-pointer border-none outline-none bg-transparent'
             }
           >
             inCompleted task
@@ -36,8 +36,8 @@ const List = ({ list, removeItem, editItem, changeItemStatus }) => {
             onClick={() => setStatus(true)}
             className={
               status
-                ? 'text-[#55dddd] font-black leading-[19px] font-[Roboto] text-[16px] cursor-pointer border-none outline-none bg-transparent ml-[27px]'
-                : 'text-[16px] font-semibold font-[Roboto] leading-[19px] cursor-pointer border-none outline-none bg-transparent ml-[27px]'
+                ? 'text-[#55dddd] font-black leading-[19px] font-[Roboto] text-base cursor-pointer border-none outline-none bg-transparent ml-[27px]'
+                : 'text-base font-semibold font-[Roboto] leading-[19px] cursor-pointer border-none outline-none bg-transparent ml-[27px]'
             }
           >
             Completed task
@@ -49,7 +49,7 @@ const List = ({ list, removeItem, editItem, changeItemStatus }) => {
         const { id, title, status } = item;
         return (
           <div
-            className='flex flex-col items-center justify-center ml-[2px] mb-[10px]'
+            className='flex flex-col items-center justify-center ml-0.5 mb-2.5'
             key={id}
           >
             <Item

@@ -83,7 +83,7 @@ function App() {
       {/*  circle add Item Button */}
       <div className='mt-0 mr-[226px] mb-[17px] ml-[1158px]'>
         <button
-          className='w-[56px] h-[56px] text-[20px] border-none outline-none text-[#fff] bg-[#609fff]  rounded-full text-center cursor-pointer'
+          className='w-14 h-14 text-[20px] border-none outline-none text-[#fff] bg-[#609fff]  rounded-full text-center cursor-pointer'
           onClick={() => setModalIsOpen(true)}
         >
           +

@@ -11,7 +11,7 @@ const Item = ({
 }) => {
   return (
     <>
-      <article className='flex items-center justify-center w-full h-[44px]'>
+      <article className='flex items-center justify-center w-full h-11'>
         <div className='check-button'>
           <input
             type='checkbox'
@@ -22,8 +22,8 @@ const Item = ({
         <p
           className={
             status
-              ? 'mt-[3px] ml-[15px] w-full h-[19px] font-[Roboto] text-[16px] font-semibold leading-normal text-left text-[#545454] line-through'
-              : 'mt-[3px] ml-[15px] w-full h-[19px] font-[Roboto] text-[16px] font-semibold leading-normal text-left text-[#545454]'
+              ? 'mt-[3px] ml-[15px] w-full h-[19px] font-[Roboto] text-base font-semibold leading-normal text-left text-[#545454] line-through'
+              : 'mt-[3px] ml-[15px] w-full h-[19px] font-[Roboto] text-base font-semibold leading-normal text-left text-[#545454]'
           }
         >
           {title}
@@ -41,11 +41,11 @@ const Item = ({
             className='border-none outline-none bg-transparent  cursor-pointer hover:bg-red-100'
             onClick={() => removeItem(id)}
           >
-            <img src={Delete} alt='delete'/>
+            <img src={Delete} alt='delete' />
           </button>
         </div>
       </article>
-      <div className='w-full h-[1px] bg-[#dedede]' />
+      <div className='w-full h-px bg-[#dedede]' />
     </>
   );
 };
